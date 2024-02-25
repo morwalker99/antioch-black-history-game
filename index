@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <script defer src="main.js"></script>
+        <title>Two Truths and a Lie - Black History Edition</title>
+    </head>
+    <body>
+        <main>
+            <div id="start-screen" style="background-image: url('norman-lewis--the-players.jpeg');">
+                <h1>Two Truths and a Lie</h1>
+                <h2>Black History Month Edition</h2>
+                <button id="start-button" onclick="gameLoop()">Start</button>
+            </div>
+            <div id="game">
+                <dialog id="option-information-dialog">
+                    <p>Lorem ipsum</p>
+                    <button onclick="closeDialog()">Close</button>
+                </dialog>
+                <dialog id="answer-dialog">
+                    <h2></h2>
+                    <p>The correct answer was</p>
+                    <button onclick="closeAnswerDialog()">Close</button>
+                </dialog>
+                <section id="game-options">
+                    <div id="option-1-section">
+                        <label><input type="radio" name="quiz" value="1" onchange="toggleCheck()" data-option=""><span class="opt-text">Option 1</span></label>
+                        <button onclick="showDialog(1)">Show Question</button>
+                    </div>
+                    <div id="option-2-section">
+                        <label><input type="radio" name="quiz" value="2" onchange="toggleCheck()" data-option=""><span class="opt-text">Option 2</span></label>
+                        <button onclick="showDialog(2)">Show Question</button>
+                    </div>
+                    <div id="option-3-section">
+                        <label><input type="radio" name="quiz" value="3" onchange="toggleCheck()" data-option=""><span class="opt-text">Option 3</span></label>
+                        <button onclick="showDialog(3)">Show Question</button>
+                    </div>
+                </section>
+                <button id="answer-button" onclick="checkAnswer()" disabled>Choose Answer</button>
+            </div>
+        </main>
+    </body>
+</html>
