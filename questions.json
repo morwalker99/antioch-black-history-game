@@ -1,0 +1,107 @@
+[
+    {
+        "correct-answer": 3,
+        "the-truth": "Harry Belafonte was the first person in the world to sell a million albums in a single year.",
+        "options": [
+            {
+                "label": "Stephen Fetchit",
+                "option": "Stephen Fetchit (born in 1902) was the first black actor to make $1 million.",
+                "value": 1
+            },
+            {
+                "label": "Madam C.J. Walker",
+                "option": "Madam C.J. Walker is the first American female self-made millionaire.",
+                "value": 2
+            },
+            {
+                "label": "Harry Belafonte",
+                "option": "Harry Belafonte is the first singer to sell a million albums.",
+                "value": 3
+            }
+        ]
+    }, 
+    {
+        "correct-answer": 2,
+        "the-truth": "Lion Man is the actual first black comic character - from All Negro Comics. But Black Panther is the first major one, debuting in Marvel in 1966.",
+        "options": [
+            {
+                "label": "Gerard Lawson",
+                "option": "Gerard Lawson is dubbed the father of the video game cartridge (the game card you put in your Switch).",
+                "value": 1
+            },
+            {
+                "label": "Black Panther",
+                "option": "Black Panther is the first black comic book character.",
+                "value": 2
+            },
+            {
+                "label": "Floyd Norman",
+                "option": "The first black animator Disney employed - Floyd Norman - worked on Sleeping Beauty (released in 1956).",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "correct-answer": 1,
+        "the-truth": "It's the 4th (or 5th) million seller black gospel song. The first is speculated to be Swing Low, Sweet Chariot as performed by the Fisk Jubilee Singers in Camden, New Jersey.",
+        "options": [
+            {
+                "label": "Louis Armstrong",
+                "option": "'When the Saints Go Marching In' by Louis Armstrong is the first million seller gospel single.",
+                "value": 1
+            },
+            {
+                "label": "Thomas Dorsey",
+                "option": "Thomas Dorsey - the father of gospel music - is credited as writing 1000+ gospel songs.",
+                "value": 2
+            },
+            {
+                "label": "Aretha Franklin",
+                "option": "Aretha Franklin's 'Amazing Grace' is the highest selling live gospel album of all time (and her highest selling album).",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "correct-answer": 1,
+        "the-truth": "The first openly black player in the major league is Moses Fleetwood Walker, while the real first one - who was passing as white - was William Edward White.",
+        "options": [
+            {
+                "label": "Jackie Robinson",
+                "option": "Jackie Robinson was the first black MLB baseball player.",
+                "value": 1
+            },
+            {
+                "label": "Kareem Abdul Jabbar",
+                "option": "Kareem Abdul Jabbar has the record for most points scored in an NBA career.",
+                "value": 2
+            },
+            {
+                "label": "Usain Bolt",
+                "option": "Usain Bolt holds the world record for the 100m, 200m, and 4x100m dashes.",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "correct-answer": 3,
+        "the-truth": "Michael Jordan originally wore the number 45 along with his brother. But when they played the same team he divided it in half and rounded it up.",
+        "options": [
+            {
+                "label": "Muhammed Ali",
+                "option": "Muhammed Ali's first gold medal is in the ocean.",
+                "value": 1
+            },
+            {
+                "label": "Jim Brown",
+                "option": "The Premiere Lacrosse League MVP award is named after Jim Brown.",
+                "value": 2
+            },
+            {
+                "label": "Michael Jordan",
+                "option": "Michael Jordan's signature 23 came from his coach marvelling at his ability to see the score 2 vs 3 on a faraway baseball scoreboard.",
+                "value": 3
+            }
+        ]
+    }
+]
