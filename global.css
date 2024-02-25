@@ -1,0 +1,126 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100vh;
+}
+
+#start-screen, #game {
+    width: 100%;
+    /*min height inherits from min-height, not height*/
+    min-height: inherit;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /*background-image: url("./norman-lewis--the-painter.jpeg");*/
+    background-color: gold;
+    background-size: cover;
+}
+
+#start-screen h2::before, #start-screen h2::after {
+    content: '-';
+}
+
+#game {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#game-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#option-1-section, #option-2-section, #option-3-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#option-1-section label, #option-2-section label, #option-3-section label {
+    width: 30vw;
+    height: 30vh;
+    position: relative;
+    left: 0;
+    background-color: yellow;
+    border: solid 1px black;
+   /* transform: translate(-50%, 0);*/
+    transition: top 2s linear, transform 2s linear, left 2s linear;
+}
+
+#option-1-section input[type="radio"], #option-2-section input[type="radio"], #option-3-section input[type="radio"] {
+    appearance: none;
+}
+
+#option-1-section label:has(input[type="radio"]:checked), #option-2-section label:has(input[type="radio"]:checked), #option-3-section label:has(input[type="radio"]:checked) {
+    box-shadow: 0 0 20px 15px red;
+} 
+
+#option-1-section label, #option-2-section label, #option-3-section label {
+   z-index: 0;
+}
+
+/*Needs this level of specificity*/
+
+#option-1-section label.starting-position, #option-2-section label.starting-position, #option-3-section label.starting-position {
+    transition: none;
+}
+
+#option-1-section label.starting-position {
+    top: calc(-50vh + 8rem + 15vh);
+    /*Need better calculation*/
+    left: calc(50vw - 15vw - 2.7rem);
+    z-index: 1;
+}
+
+#option-2-section label.starting-position {
+    top: calc(-50vh + 5rem + 15vh);
+    z-index: 0;
+}
+
+#option-3-section label.starting-position {
+    top: calc(-50vh + 2rem + 15vh);
+    /*Need better calculation*/
+    left: calc(-50vw + 15vw + 2.7rem);
+    z-index: -1;
+}
+
+
+#option-1-section label.showcase-option, #option-2-section label.showcase-option, #option-3-section label.showcase-option{
+    /*top: 50%;*/
+    top: 0;
+    transform: scale(130%, 130%);
+    z-index: 1;
+    transition: top 2s linear, transform 2s linear, left 2s linear;
+}
+
+#option-1-section label.original-position {
+    transform: none;
+}
+
+#option-2-section label.original-position {
+    transform: none;
+}
+
+#option-3-section label.original-position {
+    transform: none;
+}
